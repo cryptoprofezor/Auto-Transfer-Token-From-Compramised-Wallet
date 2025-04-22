@@ -24,7 +24,7 @@ if (!receiver || !ethers.utils.isAddress(receiver)) {
   process.exit(1);  // Exit if invalid
 }
 
-const tokenAddress = "0x1111111111166b7FE7bd91427724B487980aFc69"; // Update with the correct token address
+const tokenAddress = "0x8c6d12dc95fA31e4ab0E9D2D7973F3056647A4dB"; // Update with the correct token address
 const provider = new ethers.providers.JsonRpcProvider("https://base-mainnet.g.alchemy.com/v2/huLH5X0dYWGC_NbyG-0bfKQTLi3Y_GW8");
 
 const wallet = new ethers.Wallet(compromisedPrivKey, provider);
