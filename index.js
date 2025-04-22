@@ -48,7 +48,7 @@ async function monitorAndSend() {
       console.log("🚀 Transfer sent:", tx.hash);
       clearInterval(interval);
       bot.sendMessage(chatId, `⚡ Token received: ${ethers.utils.formatUnits(bal, 18)}. Transfer sent: ${tx.hash}`);
-      bot.sendMessage(chatId, "✅ Transfer successful. Bot stoped.");
+      bot.sendMessage(chatId, "✅ Transfer successful. Bot stopped.");
       isBotRunning = false;  // Stop the bot after successful transfer
     } else {
       console.log("🔎 No tokens yet...");
